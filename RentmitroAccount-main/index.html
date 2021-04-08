@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="myacc.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <!--header start-->
+    <header>
+        
+    </header>
+     <!---header end--->
+
+
+    <div class="container">
+        <div class="header">
+            <div class="accInfo">
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 flex-fill bd-highlight accName"><img class="accImage" src="a.jpg" height="50px"
+                            width="50px">
+                        Hello , Akshit Trivedi
+                    </div>
+                    <div class="p-2 flex-fill bd-highlight notifications"><i class="fa fa-bell"
+                            style="font-size:24px"></i></div>
+                    <div class="p-2 flex-fill bd-highlight signOut"><button type="button"
+                            class="btn btn-danger">Logout</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accDetails">
+
+        <div class="login box">
+            <div class="card animate__animated animate__backInLeft">
+                <div class="cardInfo">
+                    <div class="cardImg"><img class="accImage" c src="a.jpg" alt="" width="100px" height="100px"></div>
+                    <div class="cardName">My info</div>
+                    <div class="cardDescription">You can change your info</div>
+                </div>
+                <a href="#extend_myinfo"><button type="button" class="btn btn-secondary visit_btn"
+                        onclick="info()">visit</button></a>
+            </div>
+        </div>
+        <div class="order box">
+            <div class="card animate__animated animate__backInDown ">
+                <div class="cardInfo">
+                    <div class="cardImg"><img class="accImage" src="order.png" alt="" width="100px" height="100px">
+                    </div>
+                    <div class="cardName">Order Details</div>
+                    <div class="cardDescription">You can track and change your order</div>
+                </div>
+                <a href="#extend_order"><button type="button" class="btn btn-secondary visit_btn"
+                        onclick="order()">visit</button></a>
+            </div>
+
+        </div>
+        <div class="address box">
+            <div class="card animate__animated animate__backInRight">
+                <div class="cardInfo">
+                    <div class="cardImg"><img class="accImage" c src="address.jpeg" alt="" width="100px" height="100px">
+                    </div>
+                    <div class="cardName">Address</div>
+                    <div class="cardDescription">You can change your address</div>
+                </div>
+                <a href="#extend_address"><button type="button" class="btn btn-secondary visit_btn"
+                        onclick="address()">visit</button></a>
+            </div>
+        </div>
+
+    </div>
+    <br /><br />
+    <div id="extend_myinfo">
+        <div class="head">Personal Info</div>
+
+        <div class="basicInfo">
+
+
+            <h3>Basic Info</h3>
+            <br />
+
+            <div class="infoQuestion">Name</div>
+            <div class="infoAns">Akshit Trivedi</div>
+
+            <hr>
+            <div class="infoQuestion"><img src="username.svg" height="25px" width="25px" /> Username</div>
+            <div class="infoAns">Akshit007</div>
+            <hr>
+            <div class="infoQuestion">Profile Pic</div>
+            <div class="infoAns"></div>
+            <hr>
+            <div class="infoQuestion">Gender</div>
+            <div class="infoAns">Male</div>
+            <hr>
+            <div class="infoQuestion"><img src="dob.svg" height="25px" width="25px" /> DOB</div>
+            <div class="infoAns">01/01/2001</div>
+        </div>
+        <div class="contactInfo">
+
+            <h3>Contact Info</h3>
+            <br>
+            <div class="infoQuestion"><img src="email.svg" height="25px" width="25px" />&nbsp; Email</div>
+            <div class="infoAns">akshittrivedi1234@gmail.com</div>
+            <hr>
+            <div class="infoQuestion"><img src="mobile.svg" height="25px" width="25px" /> Mobile</div>
+            <div class="infoAns">9999999999</div>
+            <hr>
+            <div class="infoQuestion"><img src="address.svg" height="25px" width="25px" /> Address</div>
+            <div class="infoAns">9999999999</div>
+
+        </div>
+        <br />
+        <br />
+
+        <button type="button" class="btn btn-primary edit" data-toggle="modal" data-target="#exampleModal">
+            Edit info
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Verify It's you</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <br />
+                            <a href="">Forgot Password ?</a> | <a href="">Don't have an account</a>
+
+
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+
+                        <div id="editButton"><a class="editLink" href="edit.html">Next</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="extend_order">
+        <div class="head">My Orders</div>
+    </div>
+
+    <div id="extend_address">
+        <div class="head">Address</div>
+        <h1 class="heading">Add A new address</h1>
+        <div class="container">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">Andra Pradesh</option>
+                <option value="2">Assam</option>
+                <option value="3">Bihar</option>
+                <option value="4">Chandigarh</option>
+                <option value="5">Chhattisgarh</option>
+                <option value="6">Delhi</option>
+                <option value="7">Goa</option>
+                <option value="8">Gujrat</option>
+                <option value="9">Haryana</option>
+                <option value="10">Jammu & Kashmir</option>
+                <option value="11">Karnatka</option>
+                <option value="12">Odisha</option>
+            </select><br>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Full Name">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mobile Number">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Pin code">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Flat, House no.,Building">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Area,Colony,Street,Sector">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Landmark e.g near Apollo Hospital">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Town/city">
+            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option value="1"></option>
+                <option selected>Select an Address Type</option>
+                <option value="2">Home(7 am-9pm delivery)</option>
+                <option value="3">Office/Commercial(10 AM - 6PM delivery)</option>
+            </select>
+            <br />
+            <br />
+
+            <button class="save">save</button>
+
+        </div>
+    </div>
+
+    <!---footer start--->
+    <footer>
+        <div class="foot">
+            <h5>Connect with us &nbsp<i class="fa fa-address-book"></i></h5> 
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Snapchat</li>
+        </div>
+        <div class="foot">
+            <h5>Help &nbsp<i class="fa fa-briefcase"></i></h5>
+            <li>Payment</li>
+            <li>Shipping</li>
+            <li>Return</li>
+            <li>Faq</li>
+        </div>
+        <div class="foot">
+            <h5>Policies &nbsp<i class="fa fa-unlock-alt"></i></h5>
+            <li>Privacy Policy</li>
+            <li>Terms of use</li>
+            <li>Secure Shopping</li>
+            <li>Copyright Policy</li>
+        </div>
+        </footer>
+        <!---footer end-->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
